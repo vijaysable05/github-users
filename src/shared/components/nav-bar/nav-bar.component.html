@@ -1,0 +1,5 @@
+<nav class="bg-white" mat-tab-nav-bar mat-stretch-tabs="false" mat-align-tabs="end" [tabPanel]="tabPanel">
+    <a *ngFor="let tab of tabs" mat-tab-link (click)="onLinkClick(tab.path)" [active]="activeLink == tab.path">
+        {{tab.name}} </a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
